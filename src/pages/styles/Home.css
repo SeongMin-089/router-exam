@@ -1,0 +1,22 @@
+.home-slider {
+    height: 60rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide {
+    display: flex;
+}
+
+.home-slider .swiper-slide .inner {
+  background-color: #fff5;
+  width: 50%;
+  text-align: center;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.7s ;
+}
+.home-slider .swiper-slide-active .inner {
+  transform: translateY(0);
+  opacity: 1;
+}
