@@ -1,6 +1,6 @@
 import React from 'react'
 import { communityPosts } from '../data/board'
-import "./styles/board.css"
+import "./styles/Board.css"
 const Board = () => {
   return (
     <section className='board'>
