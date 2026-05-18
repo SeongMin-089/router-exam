@@ -1,16 +1,19 @@
-# React + Vite
+## 프로젝트 설명
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Router를 활용해 Home, About, Company, Board 페이지를 구성한 SPA 프로젝트입니다.
 
-Currently, two official plugins are available:
+공통 Header/Footer 레이아웃을 적용하고, URL 경로에 따라 페이지가 새로고침 없이 전환되도록 구현했습니다.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+또한 `useParams`를 활용한 동적 라우팅 구조와 NotFound 페이지 처리를 적용하여 기본적인 페이지 라우팅 흐름을 연습했습니다.
 
-## React Compiler
+## 주요 기능
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React Router 기반 페이지 라우팅
+- Home, About, Company, Board 페이지 구성
+- 공통 Header/Footer 컴포넌트 적용
+- Header 네비게이션 메뉴 구현
+- `/about/:id`, `/board/:id` 동적 라우팅 구현
+- `useParams`를 활용한 URL 파라미터 확인
+- `path="*"`를 활용한 NotFound 페이지 처리
+- Swiper를 활용한 Home 메인 슬라이드 구현
+- 배열 데이터와 `map()`을 활용한 반복 렌더링
